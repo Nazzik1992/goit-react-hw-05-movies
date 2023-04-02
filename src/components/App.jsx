@@ -3,11 +3,6 @@ import { Header } from './Header/Header';
 import { Suspense, lazy } from 'react';
 
 
-
-
-
-
-
 export const App = () => {
 
   const Home = lazy(() => import('Pages/Home/Home'));
