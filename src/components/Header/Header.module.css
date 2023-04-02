@@ -1,0 +1,22 @@
+.HeaderList {
+    box-shadow: -4px -21px 86px -6px rgba(0,0,0,0.54);
+-webkit-box-shadow: -4px -21px 86px -6px rgba(0,0,0,0.54);
+-moz-box-shadow: -4px -21px 86px -6px rgba(0,0,0,0.54);
+background-color:darkkhaki;
+margin-top: 10px;
+display: flex;
+list-style: none;
+}
+
+
+.HeaderText {
+    margin:20px;
+}
+
+
+.HeaderLink {
+    color: white;
+font-size:20px;
+font-weight:bold;
+text-decoration:none;
+}

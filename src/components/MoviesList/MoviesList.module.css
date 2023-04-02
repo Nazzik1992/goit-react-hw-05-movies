@@ -1,0 +1,30 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.item {
+    order: 2px solid black;
+  border-radius: 5px;
+  background-color: #5f9ea0;
+  width: calc((100% - 10px) / 8);
+}
+
+
+.img {
+    display: block;
+  width: 100%; ;
+}
+
+
+.title {
+    display: flex;
+  color: black;
+ font-weight: bold;
+  flex-direction: column;
+  margin: 0;
+  padding: 5px;
+}
