@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router-dom'
 import css from './Header.module.css'
+import { Outlet } from 'react-router-dom';
 
 const navItems = [
     { href: '/', text: 'Home' },
@@ -8,6 +9,7 @@ const navItems = [
 
  const Header = () => {
     return (
+      <>
       <ul className={css.HeaderList}>
         {navItems.map(({ href, text }) => (
           <li className={css.HeaderText} key={href}>
@@ -15,6 +17,9 @@ const navItems = [
           </li>
         ))}
       </ul>
+
+      <Outlet />
+      </>
     );
   };
 
