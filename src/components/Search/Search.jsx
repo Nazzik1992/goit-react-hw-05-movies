@@ -1,6 +1,14 @@
+import { useState } from 'react';
 
+export const Search = ({setSearchParams }) => {
+  const [query, setQuery] = useState('');
 
-export const Search = ({ onChange, onSubmit }) => {
+  const onChange = (e) => setQuery(e.target.value);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setSearchParams(query !== '' ? {query} : {})
+  }
+
     return (
       <form onSubmit={onSubmit}>
         <input type="text" onChange={onChange} />

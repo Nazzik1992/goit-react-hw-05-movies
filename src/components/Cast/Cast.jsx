@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom'
-import { getMovieCredits } from 'components/Api/API';
+import { getMovieCredits } from 'service/API';
 import css from './Cast.module.css'
 
 

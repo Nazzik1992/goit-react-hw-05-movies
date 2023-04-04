@@ -2,7 +2,7 @@ import { useLocation, useParams, Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import { MovieDetailsCard } from 'components/MovieDetailsCard/MovieDetailsCard';
-import { getMovieDetails } from 'components/Api/API';
+import { getMovieDetails } from 'service/API';
 import { NavLink } from 'react-router-dom';
 import css from './MovieDetails.module.css'
 

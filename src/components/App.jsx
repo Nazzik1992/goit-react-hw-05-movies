@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Header } from './Header/Header';
+import Header  from './Header/Header';
 import { Suspense, lazy } from 'react';
 
 
@@ -13,14 +13,15 @@ export const App = () => {
   const NotFound = lazy(() => import('Pages/NotFound/NotFound'));
   return (
     <>
-      <Header />
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route element={<Home />} path="/" />
+      <Route element={<Header />} path="/">
+        <Route index element={<Home />} />
         <Route element={<Movies />} path="movies" />
         <Route element={<MovieDetails />} path="movies/:movieId">
           <Route element={<Cast />} path="cast" />
           <Route element={<Reviews />} path="reviews" />
+        </Route>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -6,7 +6,7 @@ const navItems = [
     { href: 'movies', text: 'Movies' },
   ];
 
-export const Header = () => {
+ const Header = () => {
     return (
       <ul className={css.HeaderList}>
         {navItems.map(({ href, text }) => (
@@ -17,3 +17,5 @@ export const Header = () => {
       </ul>
     );
   };
+
+  export default Header;
